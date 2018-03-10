@@ -1,7 +1,7 @@
 
 
 
-data<- read.delim("household_power_consumption.txt",sep = ";",header = TRUE,stringsAsFactors = FALSE)
+data<- read.delim("household_power_consumption.txt",sep = ";",header = TRUE,stringsAsFactors = FALSE,na.string = '?')
 
 data$Date<- as.Date(data$Date,"%d/%m/%Y")
 
